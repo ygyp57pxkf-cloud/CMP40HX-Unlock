@@ -1,0 +1,11 @@
+*.efi
+*.exe
+*.sys
+*.zip
+*.bin
+profile.local.json
+diagnostic-loader/config.conf
+payloads/
+logs/
+backup/
+state.json
