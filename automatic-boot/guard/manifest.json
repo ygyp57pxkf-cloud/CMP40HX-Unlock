@@ -1,0 +1,11 @@
+{
+  "Version": "1.0-rc1",
+  "Toolchain": "Zig 0.14.1",
+  "ToolchainUrl": "https://ziglang.org/download/0.14.1/zig-x86_64-windows-0.14.1.zip",
+  "ToolchainSHA256": "554f5378228923ffd558eac35e21af020c73789d87afeabf4bfd16f2e6feed2c",
+  "EfiSHA256": "E51E04F9734CF97C02EFD19C18A5E0A92506FABD2EA1482E45F3E3ADBF17C1AB",
+  "ShellAttempts": 2,
+  "RetryDelaySeconds": 30,
+  "Tests": "13 host simulated scenarios; PE/ABI static checks",
+  "HardwareBootVerified": false
+}

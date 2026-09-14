@@ -42,3 +42,7 @@
 ## 2026-09-14 新回归：Shell执行返回Device Error
 
 [完整诊断](INCIDENT-20260914.md)。失败轮次已明确自动启动Shell后StartImage返回EFI_DEVICE_ERROR，6秒暂停后停在RefindPlus主菜单；Windows第二项没有接管。当前18:08启动/18:14双解锁成功，但无人值守失败回退仍需整改。Shell早期控制台初始化为候选，未证明具体失败函数；本轮未改写EFI。
+
+## 2026-09-14 Guard返回错误保护已部署
+
+[Guard源码、构建和说明](guard/README.md)。本机18:46在RefindPlus与Shell之间加入保护程序：Shell返回后等30秒重试一次，再返回则直接启动同ESP的微软Windows。原EFI/Shell/30秒脚本不变，未重启。13种主机模拟错误场景、PE/ABI检查和部署读回通过，真实固件启动/回退待验收；不保证处理不返回的硬锁死。
